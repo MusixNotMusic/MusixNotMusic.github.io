@@ -210,7 +210,6 @@
 
   </div>
 <script type="text/x-mathjax-config">
-    console.log('MathJax ===>', MathJax);
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ["$","$"], ["\\(","\\)"] ],
@@ -220,7 +219,6 @@
      });
     MathJax.Hub.Queue(function() {
         var all = MathJax.Hub.getAllJax();
-        console.log('MathJax all', all);
         for (var i = 0; i < all.length; ++i)
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
